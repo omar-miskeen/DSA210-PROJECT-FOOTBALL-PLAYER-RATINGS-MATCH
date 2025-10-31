@@ -1,4 +1,4 @@
-## ⚽ Project: Predicting FC Barcelona's Match Outcomes via Key Attacking Player Metrics (2024-2025)
+## ⚽ Project: Predicting FC Barcelona's Match Outcomes via Key 4 Player Metrics (2024-2025)
 
 ### Overview
 
