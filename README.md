@@ -1,4 +1,4 @@
-## ⚽ Project: Predicting FC Barcelona's Match Outcomes via Key 4 Player Metrics (2024-2025)
+## 🔵🔴 Project: Predicting FC Barcelona's Match Outcomes via Key 4 Player Metrics (2024-2025)
 
 ### Overview
 
@@ -32,7 +32,7 @@ All data for the 2024-2025 season will be collected on a per-match basis, ensuri
 
 The data collection will focus on extracting and merging all relevant statistics for *Lamine Yamal, Raphinha, Pedri, and Robert Lewandowski* across all official club competitions. The scraped data will be standardized and merged into a unified dataset for modeling.
 
-### 🛠️ Tools Used
+### Tools Used
 
 * **Python:** The primary language for all data processing, analysis, and modeling.
 
@@ -42,7 +42,7 @@ The data collection will focus on extracting and merging all relevant statistics
 
 * **Matplotlib / Seaborn:** Used for Exploratory Data Analysis (EDA) and creating effective data visualizations of correlations and model findings.
 
-### ❓ Key Questions Explored
+### Key Questions Explored
 
 1. **Individual Rating Drivers:** For each player, which metrics (e.g., SCA, PrgC, xAG) are the strongest predictors of their per-match SofaScore rating? Is the rating explained primarily by goal contributions, or by less visible creative and progressive actions?
 
@@ -52,7 +52,7 @@ The data collection will focus on extracting and merging all relevant statistics
 
 4. **Metric Distribution:** How are the key advanced metrics (xG, xAG, SCA, PrgC) distributed across the season for each player, and are these distributions correlated with periods of high/low team performance?
 
-### 📈 Metrics Utilized (Key Features)
+### Metrics Utilized (Key Features)
 
 The analysis will leverage the following metrics, collected on a per-match basis:
 
@@ -66,7 +66,7 @@ The analysis will leverage the following metrics, collected on a per-match basis
 | **Possession & Ball Control** | Touches, Carries, PrgC (Progressive Carries), Take-Ons Attempted, Successful Take-Ons | 
 | **Defensive & Discipline** | Tkl (Tackles), Int (Interceptions), Blocks, CrdY (Yellow Cards), CrdR (Red Cards) | 
 
-### ✅ Expected Results
+### Expected Results
 
 * **Rating Predictability:** I expect to find that different metrics drive the ratings for each player. For instance, Lewandowski's rating may be heavily influenced by *xG* and *SoT*, while *Pedri's* rating may be more sensitive to *PrgC* and *Prgp*.
 
