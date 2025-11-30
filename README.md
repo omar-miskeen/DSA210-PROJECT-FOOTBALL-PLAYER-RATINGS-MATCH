@@ -6,6 +6,8 @@ This project is a data-driven investigation into the relationship between the on
 
 We will move beyond simple goals and assists (G+A) to utilize *advanced metrics* (like Shot-Creating Actions, Progressive Passes, and Possessions Regained) collected on a per-match basis. 
 
+This project investigates the "Chain of Impact" connecting individual performance to team success for FC Barcelona's core attacking unit: Robert Lewandowski, Lamine Yamal, Raphinha, and Pedri.
+
 ### Motivation
 
 As a fan of Barcelona and a fan of their last season's sucesses, I've observed that subjective performance ratings and match narratives often oversimplify player impact. The quote "these players had the biggest affects on last season's great performance" highlights the intuition that a few key individuals often drive team results.
@@ -29,14 +31,15 @@ All data for the 2024-2025 season will be collected on a per-match basis, ensuri
 The data collection will focus on extracting and merging all relevant statistics for *Lamine Yamal, Raphinha, Pedri, and Robert Lewandowski* across all official club competitions. The scraped data will be standardized and merged into a unified dataset for analysis.
 
 ### Tools Used
+Sources:
 
-* **Python:** The primary language for all data processing and analysis.
+Fbref: Advanced event data (SCA, xG, Progressive Actions).
 
-* **Pandas & NumPy:** Essential for efficient data cleaning, merging the Fbref and SofaScore data, and numerical feature engineering.
+SofaScore: Match ratings (Target variable).
 
-* **Matplotlib / Seaborn:** Used for Exploratory Data Analysis (EDA) and creating effective data visualizations of correlations and findings.
+Scope: All official competitions for the 2024-2025 season.
 
-* **BeatifulSoup:** Used to data scrape off of these websites.
+Stack: Python (Pandas, NumPy), Matplotlib/Seaborn (Visualization), SciPy (Statistical Testing: ANOVA, t-test, Pearson/Spearman correlations).
 
 ### Key Questions Explored
 
@@ -59,6 +62,10 @@ The analysis will leverage the following metrics, collected on a per-match basis
 | **Passing & Creativity** | Cmp, Att, Cmp%, PrgP (Progressive Passes) | 
 | **Possession & Ball Control** | Touches, Carries, PrgC (Progressive Carries), Take-Ons Attempted, Successful Take-Ons | 
 | **Defensive & Discipline** | Tkl (Tackles), Int (Interceptions), Blocks, CrdY (Yellow Cards), CrdR (Red Cards) | 
+
+### Methodology: The Chain of Impact
+
+The analysis was narrowed into two specific phases to ensure statistical rigor:Phase 1 (Metrics --> Rating): Using Pearson and Spearman correlations to determine which specific on-ball actions correlate significantly with high match ratings for each player. Phase 2 (Rating --> Outcome): Using One-way ANOVA to test if the team's aggregated "Process Metrics" (Total xG, Total SCA) differ significantly across Wins, Draws, and Losses.
 
 ### Expected Results
 
