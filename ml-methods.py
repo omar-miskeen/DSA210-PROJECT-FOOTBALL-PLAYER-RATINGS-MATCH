@@ -143,6 +143,10 @@ def run_regression(df, split_type='random'):
     best_model = models[best]
     if hasattr(best_model, 'feature_importances_'):
         importances = best_model.feature_importances_
+    elif hasattr(best_model, 'coef_'):
+        importances = np.abs(best_model.coef_)  # Use absolute value for magnitude        
+    if importances is not None:
+        importances = best_model.feature_importances_
         indices = np.argsort(importances)[::-1][:15]
         
         plt.figure(figsize=(10, 8))
@@ -325,4 +329,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
