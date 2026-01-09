@@ -1,7 +1,10 @@
-matplotlib
-numpy
 pandas
-scipy
+numpy
+matplotlib
 seaborn
+scipy
+scikit-learn
+imbalanced-learn
+xgboost
 selenium
 webdriver-manager
