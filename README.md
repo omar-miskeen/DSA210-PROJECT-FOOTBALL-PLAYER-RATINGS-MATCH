@@ -14,7 +14,7 @@ As a fan of Barcelona and their recent success, I've observed that subjective pe
 
 This project aims to use objective data to prove or disprove this notion. By isolating the contribution of these four key attacking players, the analysis will:
 
-* Quantify which specific actions—for example, Pedri's Progressive Passes or Lewandowski's xG—truly correlate with their individual match rating.
+* Quantify which specific actions for example, Pedri's Progressive Passes or Lewandowski's xG truly correlate with their individual match rating.
 
 * Determine if the collective attacking output of these four players is a statistically significant predictor of whether FC Barcelona wins or drops points, providing a deeper analytical view than traditional team-level metrics.
 
@@ -278,7 +278,7 @@ ANOVA results showed **limited predictive power** of attacking process metrics:
 | Total_SCA | 0.730 | 0.4863 | ✗ No |
 | Total_PrgCarries | 1.239 | 0.2975 | ✗ No |
 
-**Key Insight:** While individual process metrics correlate with ratings, only **actual goals scored** and **average player ratings** significantly differ between wins/draws/losses. Advanced metrics alone don't strongly predict outcomes—**execution and conversion matter more than underlying process**.
+**Key Insight:** While individual process metrics correlate with ratings, only **actual goals scored** and **average player ratings** significantly differ between wins/draws/losses. Advanced metrics alone don't strongly predict outcomes.
 
 ---
 
@@ -400,34 +400,32 @@ This project successfully demonstrates that:
 
 **1. Individual ratings are driven by role-specific metrics**
 
-Strikers are rated on finishing (npxg, shots), midfielders on creativity and progression (progressive passes, xAG, SCA), wingers on a balanced mix (carries, creation, finishing). The SofaScore algorithm clearly values more than just goals and assists—it recognizes the multi-dimensional nature of football performance.
+Strikers are rated on finishing (npxg, shots), midfielders on creativity and progression (progressive passes, xAG, SCA), wingers on a balanced mix (carries, creation, finishing). The SofaScore algorithm clearly values more than just goals and assists where it recognizes the multi-dimensional nature of football performance.
 
 **2. The "eye test" can be quantified**
 
-Advanced metrics like SCA (Shot-Creating Actions) and progressive carries—often invisible in highlight reels—strongly correlate with expert ratings (r=0.41-0.76). These metrics validate the intuition that "good performances" involve more than goal contributions.
+Advanced metrics like SCA (Shot-Creating Actions) and progressive carries which are often invisible in highlight reels strongly correlate with expert ratings (r=0.41-0.76). These metrics validate the intuition that "good performances" involve more than goal contributions.
 
 **3. Collective process ≠ guaranteed outcomes**
 
-While individual metrics predict individual ratings well (R²=0.65-0.76), aggregated attacking metrics don't significantly predict match results (p>0.05). Only actual goals scored—not expected goals or creativity—differ across wins/draws/losses. This highlights that:
+While individual metrics predict individual ratings well (R²=0.65-0.76), aggregated attacking metrics don't significantly predict match results (p>0.05). Only actual goals scored and not expected goals or creativity differ across wins/draws/losses. This highlights that:
 - Execution matters more than underlying process
 - Defense, opponent quality, and tactics are critical
 - Football has inherent unpredictability
 
 **4. Prediction is hard**
 
-ML models struggle to beat baseline predictions (just guessing "Win" every time) for match outcomes. This isn't a model failure—it's evidence of football's complexity. Individual brilliance doesn't guarantee team success.
+ML models struggle to beat baseline predictions (just guessing "Win" every time) for match outcomes. This isn't a model failure, rather it's evidence of football's complexity. Individual brilliance doesn't guarantee team success.
 
 **5. Temporal evolution matters**
 
 Lewandowski and Raphinha's declining ratings vs Yamal and Pedri's improvements in the second half suggest form fluctuations, tactical adjustments, or physical fatigue. Football performance is dynamic, not static.
 
----
-
 ### Final Thought
 
 The analysis provides **objective evidence** that Lewandowski, Yamal, Raphinha, and Pedri's contributions extend far beyond goals/assists. Each player excels in different dimensions that align with their tactical roles, and these contributions are accurately recognized in performance ratings.
 
-However, **winning requires more than individual excellence**. The weak relationship between individual metrics and team outcomes reminds us that football is the ultimate team sport—11 players, tactics, momentum, luck, and countless unmeasured factors all contribute to the final result.
+However, **winning requires more than individual excellence**. The weak relationship between individual metrics and team outcomes reminds us that football is the ultimate team sport; 11 players, tactics, momentum, luck, and countless unmeasured factors all contribute to the final result.
 
 The "Chain of Impact" exists, but it's more complex than Metrics → Rating → Outcome. Individual brilliance creates opportunities, but team cohesion and execution determine results.
 
